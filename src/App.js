@@ -7,7 +7,7 @@ import Page3 from './views/Page3';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-700 flex flex-col text-white">
+    <div className="relative min-h-screen bg-gray-700 flex flex-col text-white">
       <Router>
         <Navbar />
         <Switch>
