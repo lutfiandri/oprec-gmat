@@ -11363,6 +11363,34 @@ video {
   height: 24rem;
 }
 
+.h-120 {
+  height: 30rem;
+}
+
+.h-124 {
+  height: 31rem;
+}
+
+.h-128 {
+  height: 32rem;
+}
+
+.h-134 {
+  height: 33.5rem;
+}
+
+.h-136 {
+  height: 34rem;
+}
+
+.h-138 {
+  height: 34.5rem;
+}
+
+.h-140 {
+  height: 35rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -39956,6 +39984,34 @@ video {
     height: 24rem;
   }
 
+  .sm\:h-120 {
+    height: 30rem;
+  }
+
+  .sm\:h-124 {
+    height: 31rem;
+  }
+
+  .sm\:h-128 {
+    height: 32rem;
+  }
+
+  .sm\:h-134 {
+    height: 33.5rem;
+  }
+
+  .sm\:h-136 {
+    height: 34rem;
+  }
+
+  .sm\:h-138 {
+    height: 34.5rem;
+  }
+
+  .sm\:h-140 {
+    height: 35rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -68504,6 +68560,34 @@ video {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-120 {
+    height: 30rem;
+  }
+
+  .md\:h-124 {
+    height: 31rem;
+  }
+
+  .md\:h-128 {
+    height: 32rem;
+  }
+
+  .md\:h-134 {
+    height: 33.5rem;
+  }
+
+  .md\:h-136 {
+    height: 34rem;
+  }
+
+  .md\:h-138 {
+    height: 34.5rem;
+  }
+
+  .md\:h-140 {
+    height: 35rem;
   }
 
   .md\:h-auto {
@@ -97056,6 +97140,34 @@ video {
     height: 24rem;
   }
 
+  .lg\:h-120 {
+    height: 30rem;
+  }
+
+  .lg\:h-124 {
+    height: 31rem;
+  }
+
+  .lg\:h-128 {
+    height: 32rem;
+  }
+
+  .lg\:h-134 {
+    height: 33.5rem;
+  }
+
+  .lg\:h-136 {
+    height: 34rem;
+  }
+
+  .lg\:h-138 {
+    height: 34.5rem;
+  }
+
+  .lg\:h-140 {
+    height: 35rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -125606,6 +125718,34 @@ video {
     height: 24rem;
   }
 
+  .xl\:h-120 {
+    height: 30rem;
+  }
+
+  .xl\:h-124 {
+    height: 31rem;
+  }
+
+  .xl\:h-128 {
+    height: 32rem;
+  }
+
+  .xl\:h-134 {
+    height: 33.5rem;
+  }
+
+  .xl\:h-136 {
+    height: 34rem;
+  }
+
+  .xl\:h-138 {
+    height: 34.5rem;
+  }
+
+  .xl\:h-140 {
+    height: 35rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -154154,6 +154294,34 @@ video {
 
   .\32xl\:h-96 {
     height: 24rem;
+  }
+
+  .\32xl\:h-120 {
+    height: 30rem;
+  }
+
+  .\32xl\:h-124 {
+    height: 31rem;
+  }
+
+  .\32xl\:h-128 {
+    height: 32rem;
+  }
+
+  .\32xl\:h-134 {
+    height: 33.5rem;
+  }
+
+  .\32xl\:h-136 {
+    height: 34rem;
+  }
+
+  .\32xl\:h-138 {
+    height: 34.5rem;
+  }
+
+  .\32xl\:h-140 {
+    height: 35rem;
   }
 
   .\32xl\:h-auto {

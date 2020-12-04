@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Plotly from 'plotly.js-dist';
 
-const Chart = ({ id, times, plus }) => {
+const Chart = ({ id, times, plus, row }) => {
   const [last, setLast] = useState(0);
   const [counter, setCounter] = useState(0);
 
@@ -34,7 +34,7 @@ const Chart = ({ id, times, plus }) => {
         r: 10,
         b: 40,
         t: 20,
-        pad: 4,
+        pad: 0,
       },
       // paper_bgcolor: '#7f7f7f',
       // plot_bgcolor: '#c7c7c7',
@@ -72,68 +72,20 @@ const Chart = ({ id, times, plus }) => {
     Plotly.extendTraces(id, update, [0]);
   }, [counter]);
 
-  // useEffect(() => {
-  //   const initTime = new Date();
-
-  //   const data = [
-  //     {
-  //       x: [initTime],
-  //       y: [last],
-  //       mode: 'lines',
-  //       line: { color: '#80CAF6' },
-  //     },
-  //   ];
-
-  //   const layout = {
-  //     autosize: true,
-  //     margin: {
-  //       l: 40,
-  //       r: 10,
-  //       b: 40,
-  //       t: 20,
-  //       pad: 4,
-  //     },
-  //     // paper_bgcolor: '#7f7f7f',
-  //     // plot_bgcolor: '#c7c7c7',
-  //   };
-
-  //   Plotly.newPlot(id, data, layout);
-
-  //   setInterval(() => {
-  //     const time = new Date();
-
-  //     const temp = rand();
-  //     setLast(temp);
-
-  //     const update = {
-  //       x: [[time]],
-  //       y: [[temp]],
-  //     };
-
-  //     const olderTime = time.setSeconds(time.getSeconds() - 60);
-  //     const futureTime = time.setSeconds(time.getSeconds() + 60);
-
-  //     const minuteView = {
-  //       xaxis: {
-  //         // type: 'date',
-  //         range: [olderTime, futureTime],
-  //       },
-  //       // yaxis: {
-  //       //   range: [-180, 180],
-  //       // },
-  //     };
-
-  //     Plotly.relayout(id, minuteView);
-  //     Plotly.extendTraces(id, update, [0]);
-  //   }, 200);
-  // }, []);
+  // const rows = () => {
+  //   return
+  // }
 
   return (
-    <div className="bg-white rounded-md p-2 col-span-5">
-      <div className="text-center">
-        {id} : {last}
+    <div
+      className={`bg-white rounded-md p-2 w-full h-full col-span-5 ${
+        row === '2' ? 'row-span-2' : 'row-span-1'
+      }`}
+    >
+      <div className="h-6 text-center">
+        {id} : {last} {typeof row} {row}
       </div>
-      <div className="h-60">
+      <div className={`${row === '2' ? 'h-134' : 'h-60'}`}>
         <div className="w-full h-full" id={id} />
       </div>
     </div>

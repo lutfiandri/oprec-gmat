@@ -2,12 +2,10 @@
 import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  // const [active, setActive] = useState(use);
   const active = useLocation().pathname;
-  // console.log(active);
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-50">
       <nav className="flex space-x-3 px-10 items-center font-bold bg-gray-800">
         <div className="text-2xl mr-5">LOGO/BRAND</div>
         <NavLink
@@ -28,7 +26,6 @@ const Navbar = () => {
         >
           3
         </NavLink>
-        <div>{active}</div>
       </nav>
     </header>
   );
