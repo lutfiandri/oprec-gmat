@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Plotly from 'plotly.js-dist';
 
-const Chart = ({ id, times, plus, row }) => {
+const Chart = ({ id, times, plus, row, setAltitude }) => {
   const [last, setLast] = useState(0);
   const [counter, setCounter] = useState(0);
 
@@ -23,7 +23,7 @@ const Chart = ({ id, times, plus, row }) => {
         x: [initTime],
         y: [last],
         mode: 'lines',
-        line: { color: '#80CAF6' },
+        line: { color: '#4B5563' },
       },
     ];
 
@@ -49,6 +49,9 @@ const Chart = ({ id, times, plus, row }) => {
 
     const temp = rand().toFixed(2);
     setLast(temp);
+    if (id === 'altitude') {
+      setAltitude(temp);
+    }
 
     const update = {
       x: [[time]],
@@ -83,7 +86,7 @@ const Chart = ({ id, times, plus, row }) => {
       }`}
     >
       <div className="h-6 text-center">
-        {id} : {last} {typeof row} {row}
+        {id} : {last}
       </div>
       <div className={`${row === '2' ? 'h-134' : 'h-60'}`}>
         <div className="w-full h-full" id={id} />
