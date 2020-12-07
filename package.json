@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tailwind": "postcss src/tailwind.css -o src/tailwind-compiled.css"
+    "tailwind": "postcss src/tailwind.css -o src/tailwind-compiled.css",
+    "tailwind-build": "NODE_ENV=production postcss src/tailwind.css -o src/tailwind-compiled.css"
   },
   "browserslist": {
     "production": [
