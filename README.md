@@ -1,8 +1,10 @@
 # Tugas Oprec GMAT
 
+[Click Me...](https://oprec-gmat.herokuapp.com/)
+
 ***Created with React. Next?***
+> - Fix stop saat pindah page -> Redux/Easy-peasy
 > - 3D Model (three.js)
-> - Redux / Easy-peasy
 > - Light/Dark mode
 > - Cari API (moga2 dapet)
 
