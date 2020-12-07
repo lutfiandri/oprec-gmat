@@ -42,6 +42,7 @@ const Chart = ({ id, times, plus, row, setAltitude }) => {
 
     Plotly.newPlot(id, data, layout);
     goInterval();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -73,6 +74,7 @@ const Chart = ({ id, times, plus, row, setAltitude }) => {
 
     Plotly.relayout(id, minuteView);
     Plotly.extendTraces(id, update, [0]);
+    // eslint-disable-next-line
   }, [counter]);
 
   // const rows = () => {
