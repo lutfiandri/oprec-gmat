@@ -9,7 +9,7 @@ const App = () => {
   const [altitude, setAltitude] = useState(0);
   return (
     <div className="relative min-h-screen bg-gray-700 flex flex-col text-white">
-      <Router basename="/">
+      <Router>
         <Navbar />
         <Switch>
           <Route exact path="/">

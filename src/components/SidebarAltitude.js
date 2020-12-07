@@ -1,4 +1,4 @@
-const SidebarAltitude = ({ altitude, setAltitude, row }) => {
+const SidebarAltitude = ({ altitude, row }) => {
   return (
     <div
       className={`bg-white flex flex-col items-center rounded-md p-2 h-full w-full ${
